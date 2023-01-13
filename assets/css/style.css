@@ -1,0 +1,34 @@
+/* Elvin code tout droits réservés */
+:root{
+    /* Colors */
+    --primary-color: #623CEA;
+    --orange-color: #FF7F00;
+    --black-color: #000;
+    --gary-color: #666;
+
+    /* Typographies */
+    --fs-1: 4rem;
+    --fs-2: 3.2rem;
+    --fs-3: 2.4rem;
+    --fs-4: 2rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.4rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+
+    --section-padding: 80px;
+
+    --shadow-1: 0 8px 20px hsla(0, 0%, 0%, 0.06);
+    --shadow-2: 0px 4px 10px hsla(0, 0%, 0%, 0.05);
+
+    /* Transitions */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+
+    /* borders & radius */
+    --radius-4: 4px;
+    --radius-6: 6px;
+}
