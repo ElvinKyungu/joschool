@@ -4,21 +4,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- icons -->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Joboy School</title>
+        <style>
+            
+           
+        </style>
     </head>
     <body>
         <header class="header">
 
-            <a href="home.html" class="logo"> <i class="fas fa-graduation-cap"></i> educa </a>
+            <a href="home.html" class="logo"> <i class="fas fa-graduation-cap"></i> Jo school </a>
         
-            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="menu-btn">
+                <i class= "fi fi-rr-menu-burger"></i>
+            </div>
         
             <nav class="navbar">
                 <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="#">courses +</a>
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="about.html">Apropos</a></li>
+                    <li><a href="#">cours +</a>
                         <ul>
                             <li><a href="course-1.html">course 01</a></li>
                             <li><a href="course-2.html">course 02</a></li>
@@ -27,14 +35,71 @@
                     </li>
                     <li><a href="#">pages +</a>
                         <ul>
-                            <li><a href="teachers.html">teachers</a></li>
-                            <li><a href="blog.html">blogs</a></li>
+                            <li><a href="teachers.html">Horaire</a></li>
+                            <li><a href="teachers.html">Jeux</a></li>
+                            <li><a href="teachers.html">Enseignants</a></li>
+                            <li><a href="blog.html">blog</a></li>
                         </ul>
                     </li>
+                    <li><a href="contact.html">chat</a></li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
         </header>
-        <script src=""></script>
+        <main>
+            <section class="home">
+                <div class="swiper home-slider">
+                    <div class="swiper-wrapper">
+                        <section class="swiper-slide slide" style="background: url(assets/images/slider_homepage.jpg) no-repeat;">
+                            <div class="opacity"></div>
+                            <div class="content">
+                                <h3>Joboy School !</h3>
+                                <p>Vous êtes le futur du numérique</p><br>
+                                <div class="btns flex">
+                                    <a class="btn bg-primary text-white border-primary">Horairen de lecture</a>
+                                    
+                                    <a class="btn ml-1 bg-orange text-white border-orange">Jeux de culture</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="section category"  aria-label="category">
+                <div class="container" >
+                    <h2 class="h2 section-title fs-3">Les forces de Joboy School</h2>
+                    <ul class="grid-list">
+                        <li data-aos="fade-down-left">
+                            <div class="category-card">
+                                <div class="card-icon">
+                                    <ion-icon name="server-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Data Sciences</a>
+                                    </h3>
+                                    <span class="card-meta">39 Course</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-aos="fade-down-left">
+                            <div class="category-card">
+                                <div class="card-icon">
+                                    <ion-icon name="server-outline"></ion-icon>
+                                </div>
+                                <div>
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Data Sciences</a>
+                                    </h3>
+                                    <span class="card-meta">39 Course</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <script src="assets/js/app.js"></script>
     </body>
 </html>

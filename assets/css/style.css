@@ -1,10 +1,13 @@
 /* Elvin code tout droits réservés */
+
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 :root{
     /* Colors */
     --primary-color: #623CEA;
     --orange-color: #FF7F00;
     --black-color: #000;
     --gary-color: #666;
+    --white-color: #fff;
 
     /* Typographies */
     --fs-1: 4rem;
@@ -32,3 +35,299 @@
     --radius-4: 4px;
     --radius-6: 6px;
 }
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  list-style: none;
+}
+
+.container{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    width:100%;
+    padding-right:calc(var(--bs-gutter-x) * .5);
+    padding-left:calc(var(--bs-gutter-x) * .5);
+    margin-right:auto;
+    margin-left:auto
+}
+/* classes de base */
+.flex{
+    display: flex;
+}
+.grid-list{
+    display: grid;
+}
+/* margins */
+.ml-1{
+    margin-left: 1rem;
+}
+
+/* padding */
+
+/* bg */
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.bg-orange{
+    background-color: var(--orange-color);
+}
+
+/* colors texte */
+.text-white{
+    color: var(--white-color);
+}
+.border-primary{
+    border: 1px solid var(--primary-color);
+}
+.border-orange{
+    border: 1px solid var(--orange-color);
+}
+
+/* fontsize */
+.fs-1{
+    font-size: 4rem;
+}
+.fs-2{
+    font-size: 3.2rem;
+}
+.fs-3{
+    font-size: 2.4rem;
+}
+.fs-4{
+    font-size: 2rem;
+}
+.fs-5{
+    font-size: 1.8rem;
+}
+.fs-6{
+    font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: space-between;
+  padding: 0 9%;
+  background: var(--white-color);
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: black;
+  display: flex;align-items: center;
+}
+
+.header .navbar ul {
+  list-style: none;
+}
+
+.header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.header .navbar ul li:hover ul {
+  display: block;
+}
+
+.header .navbar ul li a {
+  padding: 1.5rem;
+  display: block;
+  font-size: 1rem;
+  color: var(--gary-color);
+  font-weight: var(--fw-700);
+}
+
+.header .navbar ul li a:hover {
+  background: var(--orange-color);
+  color: var(--white-color)
+}
+
+.header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 15rem;
+  background: var(--white-color);
+  display: none;
+}
+
+.header .navbar ul li ul li {
+  width: 100%;
+}
+
+#menu-btn {
+  cursor: pointer;
+  color: var(--black-color);
+  font-size: 2.5rem;
+  display: none;
+}
+
+/* Home */
+.home {
+    padding: 0;
+    height: 100vh;
+}
+    
+.home .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90vh;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.swiper-wrapper{
+    position: relative;
+}
+
+div.opacity{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(32, 38, 55);
+    opacity: .5;
+    height: 100%;
+    z-index: 1;
+}  
+.home .slide .content {
+    z-index: 5;
+    width: 75rem;
+    padding-left: 7rem;
+}
+    
+.home .slide .content h3 {
+    font-size: 3rem;
+    color: #444;
+    color: #fff;
+}
+    
+.home .slide .content p {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #777;
+    color: #eee;
+    padding: 1rem 0;
+    text-transform: none;
+    font-weight: var(--fw-700);
+}
+.btns .btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid var(--white-color);
+}
+ 
+
+
+/*-----------------------------------*\
+  #CATEGORY
+\*-----------------------------------*/
+
+
+
+
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  #menu-btn i{
+    display: flex;align-items: center;
+    font-size: var(--fs-4);
+  }
+  .header {
+    padding: .6rem;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--white-color);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar ul li {
+    width: 100%;
+  }
+  .header .navbar ul li ul {
+    width: 100%;
+    position: relative;
+  }
+  .home .slide .content {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+  
+}
+
+@media (max-width: 430px) {
+    .btns .btn{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+@media (min-width:576px){
+    .container{
+        max-width:540px
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:720px
+    }
+}@media (min-width:992px){
+    .container{
+        max-width:960px
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width:1140px
+    }
+}
+@media (min-width:1400px){
+    .container{
+        max-width:1320px
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
