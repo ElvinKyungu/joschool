@@ -40,3 +40,17 @@ textContentCategory.forEach(acco =>{
         }
     };
 });
+
+let preferenceBtnCourse = document.querySelectorAll('.whishlist-btn');
+
+
+for (let i = 0; i < preferenceBtnCourse.length; i++) {
+    whishlistBtns[i].addEventListener("click", function () {
+      preferenceBtnCourse.classList.add('active');
+    });
+  }
+  
+
+preferenceBtnCourse.addEventListener('click', ()=>{
+    preferenceBtnCourse.classList.add('active')
+})

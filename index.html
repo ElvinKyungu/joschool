@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- icons -->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
@@ -13,18 +14,15 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <title>App School</title>
         <style>
-
+            
         </style>
     </head>
     <body>
         <header class="header">
-
             <a href="home.html" class="logo"> <i class="fas fa-graduation-cap"></i> App school </a>
-        
             <div id="menu-btn">
                 <i class= "fi fi-rr-menu-burger"></i>
             </div>
-        
             <nav class="navbar">
                 <ul>
                     <li><a href="home.html">Accueil</a></li>
@@ -74,7 +72,7 @@
                     <h2 class="h2 section-title fs-3">Les forces de App School</h2>
                     <ul class="grid-list">
                         <li data-aos="fade-down-left">
-                            <div class="category-card" id="independance">
+                            <div class="category-card " id="independance">
                                 <div class="card-icon">
                                     <i class="fi fi-rr-users-alt"></i>
                                 </div>
@@ -146,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="Layout Layout-open Layout-expand Layout-right">
+                <div class="Layout Layout-open Layout-expand Layout-right d-none">
                     <div class="Messenger_messenger">
                         <div class="Messenger_header">
                             <h4 class="Messenger_prompt">Comment vous aider ?</h4> <span class="chat_close_icon"><i class="fa fa-window-close" aria-hidden="true"></i></span>
@@ -169,6 +167,178 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Cours -->
+            <section class="section course mt-5" id="courses" aria-label="course"
+                    style="background-image: url('./assets/images/course-bg.jpg')">
+                <div class="container"><br><br>
+                    <h2 class="h2 section-title fs-3" data-aos="fade-down">Nos cours populaires</h2>
+                    <ul class="grid-list" data-aos="zoom-out-up">
+                        <li>
+                            <div class="course-card">
+                                <figure class="card-banner">
+                                <img src="./assets/images/pexels-katerina-holmes-5905845.jpg" width="370" height="270" loading="lazy"
+                                    alt="" class="img-cover">
+                                </figure>
+            
+                                <div class="card-actions">
+                                    <span class="badge">Basique</span>
+                                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                                        <ion-icon name="heart"> <i class="fi fi-sr-star"></i></ion-icon>
+                                    </button>
+                                </div>
+            
+                                <div class="card-content">
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <ion-icon name="reader-outline" aria-hidden="true"><i class="fi fi-rr-book-alt"></i></ion-icon>
+                                            <span class="card-meta-text">35 Leçons</span>
+                                        </li>
+                
+                                        <li class="card-meta-item">
+                                            <ion-icon name="time-outline" aria-hidden="true"><i class="fi fi-rr-time-oclock "></i></ion-icon>
+                                            <time datetime="PT18H15M44S" class="card-meta-text">15h 15m 44s</time>
+                                        </li>
+                                    </ul>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Algorithmique</a>
+                                    </h3><br>
+                                    <div class="rating-wrapper">
+                                        <div class="rating">
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                        </div>
+                                        <span class="rating-text">(18 Etoiles)</span>
+                                    </div>
+            
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <span class="span">Gratuit</span>
+                    
+                                            <del class="del">25$</del>
+                                        </div>
+                                        <div class="card-meta-item">
+                                            <ion-icon name="people-outline" aria-hidden="true"><i class="fi fi-ss-users"></i></ion-icon>
+                                            <span class="card-meta-text">47 Etudiants</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-card">
+                                <figure class="card-banner">
+                                    <img src="./assets/images/pexels-katerina-holmes-5905845.jpg" width="100%" height="270" loading="lazy"
+                                    alt="" class="img-cover">
+                                </figure>
+            
+                                <div class="card-actions">
+                                    <span class="badge">Basique</span>
+                                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                                        <ion-icon name="heart"> <i class="fi fi-sr-star"></i></ion-icon>
+                                    </button>
+                                </div>
+            
+                                <div class="card-content">
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <ion-icon name="reader-outline" aria-hidden="true"><i class="fi fi-rr-book-alt"></i></ion-icon>
+                                            <span class="card-meta-text">35 Leçons</span>
+                                        </li>
+                
+                                        <li class="card-meta-item">
+                                            <ion-icon name="time-outline" aria-hidden="true"><i class="fi fi-rr-time-oclock "></i></ion-icon>
+                                            <time datetime="PT18H15M44S" class="card-meta-text">15h 15m 44s</time>
+                                        </li>
+                                    </ul>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Algorithmique</a>
+                                    </h3><br>
+                                    <div class="rating-wrapper">
+                                        <div class="rating">
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                        </div>
+                                        <span class="rating-text">(18 Etoiles)</span>
+                                    </div>
+            
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <span class="span">Gratuit</span>
+                    
+                                            <del class="del">25$</del>
+                                        </div>
+                                        <div class="card-meta-item">
+                                            <ion-icon name="people-outline" aria-hidden="true"><i class="fi fi-ss-users"></i></ion-icon>
+                                            <span class="card-meta-text">47 Etudiants</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-card">
+                                <figure class="card-banner">
+                                <img src="./assets/images/pexels-katerina-holmes-5905845.jpg" width="370" height="270" loading="lazy"
+                                    alt="" class="img-cover">
+                                </figure>
+            
+                                <div class="card-actions">
+                                    <span class="badge">Basique</span>
+                                    <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                                        <ion-icon name="heart"> <i class="fi fi-sr-star"></i></ion-icon>
+                                    </button>
+                                </div>
+            
+                                <div class="card-content">
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <ion-icon name="reader-outline" aria-hidden="true"><i class="fi fi-rr-book-alt"></i></ion-icon>
+                                            <span class="card-meta-text">35 Leçons</span>
+                                        </li>
+                
+                                        <li class="card-meta-item">
+                                            <ion-icon name="time-outline" aria-hidden="true"><i class="fi fi-rr-time-oclock "></i></ion-icon>
+                                            <time datetime="PT18H15M44S" class="card-meta-text">15h 15m 44s</time>
+                                        </li>
+                                    </ul>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Algorithmique</a>
+                                    </h3><br>
+                                    <div class="rating-wrapper">
+                                        <div class="rating">
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                            <ion-icon name="star"><i class="fi fi-ss-star"></i></ion-icon>
+                                        </div>
+                                        <span class="rating-text">(18 Etoiles)</span>
+                                    </div>
+            
+                                    <div class="card-footer">
+                                        <div class="card-price">
+                                            <span class="span">Gratuit</span>
+                    
+                                            <del class="del">25$</del>
+                                        </div>
+                                        <div class="card-meta-item">
+                                            <ion-icon name="people-outline" aria-hidden="true"><i class="fi fi-ss-users"></i></ion-icon>
+                                            <span class="card-meta-text">47 Etudiants</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><br><br>
+            </section>
         </main><br><br>
         <footer class="footer">
             <div class="container">
@@ -189,26 +359,26 @@
     
                     <li>
                     <a href="#" class="social-link">
-                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-facebook"><i class="fi fi-brands-facebook"></i></ion-icon>
                     </a>
                     </li>
     
                     <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"><i class="fi fi-brands-twitter"></i></ion-icon>
+                        </a>
                     </li>
     
                     <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"><i class="fi fi-brands-linkedin"></i></ion-icon>
+                        </a>
                     </li>
     
                     <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-github"><i class="fi fi-brands-github"></i></ion-icon>
+                        </a>
                     </li>
     
                 </ul>
@@ -218,7 +388,7 @@
                 <ul class="footer-list">
     
                 <li>
-                    <p class="footer-list-title">UNILU</p>
+                    <p class="footer-list-title">App School</p>
                 </li>
     
                 <li>
@@ -318,29 +488,29 @@
                 </li>
     
                 <li class="footer-item">
-                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="location-outline" aria-hidden="true"><i class="fi fi-rr-location-alt"></i></ion-icon>
     
                     <address class="footer-link">
-                    275 Route Kassapa, faculté des sciences, Lubumbashi
+                    275 Des usines, Lubumbashi
                     </address>
                 </li>
     
                 <li class="footer-item">
-                    <ion-icon name="call" aria-hidden="true"></ion-icon>
+                    <ion-icon name="call" aria-hidden="true"><i class="fi fi-rr-call-incoming"></i></ion-icon>
     
                     <a href="tel:+13647657839" class="footer-link">+243 995 555 480</a>
                 </li>
     
                 <li class="footer-item">
-                    <ion-icon name="call" aria-hidden="true"></ion-icon>
+                    <ion-icon name="call" aria-hidden="true"><i class="fi fi-rr-call-incoming"></i></ion-icon>
     
                     <a href="tel:+13647657840" class="footer-link">+243 995 555 480</a>
                 </li>
     
                 <li class="footer-item">
-                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                    <ion-icon name="mail-outline" aria-hidden="true"> <i class="fi fi-rr-envelope"></i></ion-icon>
     
-                    <a href="mailto:contact@eduhome.com" class="footer-link">cerclescientifique.unilu@gmail.com</a>
+                    <a href="mailto:" class="footer-link">appschool@gmail.com</a>
                 </li>
     
                 </ul>
@@ -349,7 +519,7 @@
     
             <div class="footer-bottom">
                 <p class="copyright">
-                Copyright 2022 Math-Info | UNILU Tout droit réservé.
+                Copyright 2022 App School | Tout droit réservé.
                 </p>
             </div>
     
