@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 :root{
     /* Colors */
-    --primary-color: #623CEA;
+    --primary-color: #007bff;
     --orange-color: #FF7F00;
     --black-color: #000;
     --gary-color: #666;
@@ -434,7 +434,9 @@ div.opacity{
     height: 400px;
     border-radius: var(--radius-6);
     box-shadow: var(--shadow-2);
-    background-color: hsl(0, 0%, 96%);
+    background-color: #fff;
+    border: 1px solid hsl(0, 0%, 96%);
+    box-shadow:  30px 30px 30px 30px hsla(0, 0%, 0%, 0.09);
     /* z-index: 9; */
 }
 .botIcon {
@@ -456,7 +458,7 @@ div.opacity{
     bottom: 20px;
     right: 25px;
     z-index: 999;
-    box-shadow: var(--shadow-1);
+   
    
 }
 .botIconContainer{
@@ -464,20 +466,79 @@ div.opacity{
 }
 .Layout-open{
     z-index: 9 !important;
-}
-.Messenger_messenger h4{
-    text-align: center;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-}
-.Messenger_messenger input{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    width: 100%;
     padding: 1rem;
 }
+.Layout-open.active{
+    transition: .3s ease-in-out;
+}
+.wrapper .form{
+    overflow-y: scroll;
+}
+.wrapper .title{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: var(--fw-800);
+}
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+
+}
+.wrapper .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    background: #007bff;
+}
+.wrapper .form .inbox .msg-header{
+    max-width: 53%;
+    margin-left: 10px;
+}
+.form .inbox .msg-header p{
+    color: #fff;
+    background: #007bff;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    word-break: break-word;
+}
+.form .user-inbox .msg-header p{
+    color: #333;
+    background: #efefef;
+    word-wrap: break-word;
+}
+.typing-field{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.typing-field input{
+    position: absolute;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 96%);
+    bottom: -6rem;
+    width: 200px;
+}
+.typing-field button{
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    bottom: -6rem;
+    border-radius: var(--radius-4);
+    right: 0;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
 
 /* Footer */
 

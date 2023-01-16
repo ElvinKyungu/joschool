@@ -45,12 +45,18 @@ let preferenceBtnCourse = document.querySelectorAll('.whishlist-btn');
 
 
 for (let i = 0; i < preferenceBtnCourse.length; i++) {
-    whishlistBtns[i].addEventListener("click", function () {
-      preferenceBtnCourse.classList.add('active');
+    preferenceBtnCourse[i].addEventListener("click", function () {
+      preferenceBtnCourse[i].classList.add('active');
     });
   }
   
 
-preferenceBtnCourse.addEventListener('click', ()=>{
-    preferenceBtnCourse.classList.add('active')
+
+// btn chatbot
+let botIconContainer = document.querySelector('.iconInner');
+botIconContainer.addEventListener('click', ()=>{
+    document.querySelector('.Layout-open').classList.toggle('d-none');
+    let icon = document.querySelector('.fi-rs-comment');
+    
+    icon.classList.toggle('fi-rs-user')
 })
