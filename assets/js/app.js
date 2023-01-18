@@ -12,6 +12,27 @@ document.querySelector('#menu-btn').onclick = () =>{
 window.onscroll = () =>{
     navbar.classList.remove('active');
 }
+
+let botIconContainer = document.querySelector('.iconInner');
+botIconContainer.addEventListener('click', ()=>{
+    document.querySelector('.Layout-open').classList.toggle('d-none');
+    let icon = document.querySelector('.fi-rs-comment');
+    
+    icon.classList.toggle('fi-rs-user')
+});
+
+
+// WishList
+let preferenceBtnCourse = document.querySelectorAll('.whishlist-btn');
+
+
+for (let i = 0; i < preferenceBtnCourse.length; i++) {
+    preferenceBtnCourse[i].addEventListener("click", function () {
+      preferenceBtnCourse[i].classList.toggle('active');
+    });
+}
+  
+// Category Force 
 let textContentCategory = document.querySelectorAll(".category-card");
 let ContentCategory = document.querySelector('.content-category span')
 
@@ -41,22 +62,7 @@ textContentCategory.forEach(acco =>{
     };
 });
 
-let preferenceBtnCourse = document.querySelectorAll('.whishlist-btn');
 
-
-for (let i = 0; i < preferenceBtnCourse.length; i++) {
-    preferenceBtnCourse[i].addEventListener("click", function () {
-      preferenceBtnCourse[i].classList.add('active');
-    });
-  }
-  
 
 
 // btn chatbot
-let botIconContainer = document.querySelector('.iconInner');
-botIconContainer.addEventListener('click', ()=>{
-    document.querySelector('.Layout-open').classList.toggle('d-none');
-    let icon = document.querySelector('.fi-rs-comment');
-    
-    icon.classList.toggle('fi-rs-user')
-})
